@@ -44,6 +44,7 @@ function createIssue() {
 
 function getIssues() {
   const url = baseUrl + "repos/egreen724/js-ajax-fetch-lab/issues"
+
   fetch(url, {
     method: 'GET',
     headers: {
