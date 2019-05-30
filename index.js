@@ -43,8 +43,8 @@ function createIssue() {
 
 
 function getIssues() {
-
-  fetch(baseUrl + "repos/egreen724/js-ajax-fetch-lab/issues", {
+  const url = baseUrl + "repos/egreen724/js-ajax-fetch-lab/issues"
+  fetch(url, {
     method: 'GET',
     headers: {
       Authorization: `token ${getToken()}`
