@@ -25,8 +25,10 @@ function showResults(json) {
 
 function createIssue() {
   const url = baseUrl + "repos/egreen724/js-ajax-fetch-lab/issues"
-  const postData = { title: document.getElementById('title').value,
-                    body: document.getElementById('body').value}
+  const postData = { 
+    title: document.getElementById('title').value,
+    body: document.getElementById('body').value
+  };
 
   fetch(url, {
     method: 'POST',
