@@ -32,7 +32,7 @@ function createIssue() {
 
   fetch(url, {
     method: 'POST',
-    body: JSON.stringify(postData)
+    body: JSON.stringify(postData),
     headers: {
       Authorization: `token ${getToken()}`
     }
@@ -40,6 +40,7 @@ function createIssue() {
     .then(res => res.json())
     .then(json => getIssues());
 }
+
 
 function getIssues() {
 
